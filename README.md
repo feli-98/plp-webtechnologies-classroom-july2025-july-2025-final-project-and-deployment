@@ -37,7 +37,10 @@ Download or Clone: Get all the files (index.html, styles.css, script.js) and pla
 
 Open the File: Simply open the index.html file in any web browser (like Chrome, Firefox, or Safari).
 
-Recommended (Live Server): For the best development experience, open the project folder in VS Code and use the "Live Server" extension to automatically see changes as you save them.
+
+Live website URL 
+https://feli-98.github.io/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment/
+
 
 ✍️ Author
-Felistus 
+Felistus Mukiri

@@ -1,0 +1,302 @@
+/* =========================
+   Global Styles
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* === REFINED: Updated brand colors === */
+:root {
+  --primary: #8D7B68;   /* Sophisticated beige/brown */
+  --secondary: #3C2A21; /* Dark brown for text/accents */
+  --accent: #F5EFE6;    /* Soft background */
+  --text: #1e293b;
+  --light: #ffffff;
+  --dark: #3C2A21;    /* Dark brown for header/footer */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background: var(--light);
+  color: var(--text);
+}
+
+/* =========================
+   Header / Navbar
+========================= */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: var(--dark);
+  color: #fff;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+#menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* =========================
+   Hero Section
+========================= */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* === REFINED: Updated gradient and image path === */
+  /* This assumes your image is in an 'images' folder */
+  /* If it's in the SAME folder, change to: url("background.jpg") */
+  background: linear-gradient(rgba(60, 42, 33, 0.7), rgba(60, 42, 33, 0.7)),
+    url("images/background.jpg") no-repeat center center/cover;
+  color: #fff;
+  padding: 2rem;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero-content p {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background: var(--primary);
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background: var(--secondary);
+  transform: scale(1.05);
+}
+
+/* =========================
+   Sections
+========================= */
+section {
+  padding: 5rem 2rem;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+/* About */
+.about p {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Products (was 'services') */
+.services {
+  background: var(--accent);
+}
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.service {
+  background: #fff;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+}
+
+.service h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+/* Contact */
+.contact-details {
+  text-align: center;
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+
+.contact a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: auto;
+  display: grid;
+  gap: 1rem;
+}
+
+.contact input,
+.contact textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+/* Footer */
+footer {
+  /* === REFINED: Updated background === */
+  background: var(--dark);
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+/* =========================
+   Animations
+========================= */
+html {
+  scroll-behavior: smooth;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slide-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.slide-left.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.slide-right.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* =========================
+   Responsive
+========================= */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    gap: 1rem;
+    background: var(--dark);
+    position: absolute;
+    top: 66px; /* Adjust to match your header height */
+    right: 0;
+    padding: 1rem;
+    width: 200px;
+    border-radius: 0 0 5px 5px;
+  }
+
+  /* === FIXED: This rule shows the menu === */
+  .nav-links.active {
+    display: flex;
+  }
+
+  #menu-toggle {
+    display: block; /* Show hamburger icon */
+    color: #fff;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+}

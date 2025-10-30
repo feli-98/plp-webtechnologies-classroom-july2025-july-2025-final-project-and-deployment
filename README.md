@@ -1,90 +1,43 @@
-# 📦 Final Assignment: Build, Organize, and Deploy a Multipage Website
+Montreal Companies Ltd - Website
 
-You're now ready to bring everything together—HTML, CSS, JavaScript, planning, structure, and deployment. This final project challenges you to **conceptualize, build, and deploy a multi-page website** that is responsive, interactive, and ready for the real world.
+This is a single-page, fully responsive portfolio website for "Montreal Companies Ltd," a bedding and interior design store. The project is built from scratch using HTML, CSS, and modern JavaScript.
 
-This assignment will guide you from planning your site all the way to deploying it online. Let’s make your project *production-worthy*! 🚀
+It is designed to be elegant, professional, and interactive, showcasing the company's products, services, and brand philosophy.
 
----
+✨ Features
+Single-Page Design: All content (Home, About, Products, Contact) is accessible on one smooth-scrolling page.
 
-## 🌐🎯 Part 1: Planning and Organizing a Multipage Website
+Fully Responsive: The layout adapts perfectly to all screen sizes, from large desktops to mobile phones.
 
-Before you write any code, take time to plan:
+Interactive Mobile Menu: A clean, JavaScript-powered hamburger menu for easy navigation on small devices.
 
-* Define your website's purpose (portfolio, product showcase, blog, etc.)
-* Outline 3–5 pages (e.g., Home, About, Services, Contact, Gallery)
-* Sketch or describe the layout of each page
-* Map out internal navigation (how pages link to one another)
+Scroll Animations: Subtle "fade-in" and "slide-in" animations (powered by Intersection Observer) that activate as the user scrolls down the page.
 
-**Goal:** Show intentional structure and user journey across the site.
+Functional Contact Form: A client-side form that provides an alert on successful submission.
 
----
+Modern & Clean UI: A sophisticated design using a professional color palette and typography.
 
-## 🌍💻 Part 2: Build the Website Using HTML5, CSS, and JavaScript
+🛠️ Tech Stack
+HTML5: For the semantic structure and content of the website.
 
-Using your plan, begin building:
+CSS3: For all styling, layout (Flexbox/Grid), animations, and responsive design (using @media queries).
 
-* Use HTML5 for semantic structure
-* Apply CSS for responsive layout, styling, and animations
-* Use JavaScript to add interactivity (menus, forms, toggles, dynamic content)
+JavaScript: For all interactivity, including:
 
-Each page should:
+Mobile menu toggle (and "close on click")
 
-* Be mobile-responsive
-* Share a consistent layout/header/footer
-* Include at least one interactive element (e.g., form validation, toggle menu, animation on scroll)
+Scroll-triggered animations (Intersection Observer)
 
-**Goal:** Integrate everything you’ve learned in a cohesive, functioning project.
+Contact form submission alert
 
----
 
-## 🛠️🚀 Part 3: Best Practices for Code Organization
+🚀 How to Run
 
-Before deployment, refactor your project to follow production-friendly practices:
+Download or Clone: Get all the files (index.html, styles.css, script.js) and place them in the same directory.
 
-* Organize files in folders (`/css`, `/js`, `/images`, etc.)
-* Write clean, modular, and commented code
-* Use meaningful file names and relative paths
-* Validate your HTML/CSS and test on different screen sizes
+Open the File: Simply open the index.html file in any web browser (like Chrome, Firefox, or Safari).
 
-**Goal:** Prepare your codebase to be readable, maintainable, and scalable.
+Recommended (Live Server): For the best development experience, open the project folder in VS Code and use the "Live Server" extension to automatically see changes as you save them.
 
----
-
-## 🌐🚀 Part 4: Introduction to Hosting and Deployment
-
-Once your project is complete, choose a method to **host your site online**.
-
-You can use:
-
-* **GitHub Pages** (great for portfolios and static sites)
-* **Netlify** (powerful CI/CD features and easy form support)
-* **Vercel** (lightning-fast deployment for frontend projects)
-
-Deploy your project and confirm that:
-
-* All links and scripts work
-* It loads properly on mobile and desktop
-* It has a clear, shareable URL
-
-**Goal:** Publish your work online and make it accessible to the world.
-
----
-
-## Deliverables
-
-1. A GitHub repository containing:
-
-   * Your complete project code, properly organized
-   * A `README.md` file explaining your project purpose, structure, and live URL
-2. A live deployed website (hosted via GitHub Pages, Netlify, or Vercel)
-
----
-
-## Outcome
-
-* Clarity and thoroughness of planning documentation
-* Proper use of HTML5, CSS, and JavaScript across multiple pages
-* Responsive and accessible design
-* Clean, well-organized, and commented code
-* Successful live deployment with a working link
-* Evidence of following best practices
+✍️ Author
+Felistus 
